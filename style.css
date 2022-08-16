@@ -1,0 +1,135 @@
+@import url('https://fonts.googleapis.com/css2?family=Overpass:wght@400;700&display=swap');
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Overpass', sans-serif;
+    font-weight: 400;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.container {
+    background-color: hsl(216 12% 8%);
+    min-width: 1440px;
+    min-height: 800px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: hsl(0 0% 100%);
+}
+
+.small_container {
+    background-color: hsl(213 19% 18%);
+    width: 420px;
+    height: 420px;
+    border-radius: 20px;
+    padding: 35px;
+}
+
+#star {
+    width: 50px;
+    height: 50px;
+    background-color: hsl(213 19% 28%);
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#heading {
+    margin-top: 35px;
+    font-weight: 700;
+}
+
+#paragraph {
+    margin-bottom: 30px;
+    color: hsl(216 12% 54%);
+}
+
+.number_rating {
+    border: none;
+    appearance: none;
+    cursor: pointer;
+    background-color: hsl(213 19% 28%);
+    display: inline-block;
+    width: 55px;
+    height: 55px;
+    border-radius: 50%;
+    color: hsl(216 12% 54%);
+    font-weight: 700;
+    font-size: 15px;
+    margin-bottom: 15px;
+    margin-right: 10px;
+    transition: ease-in 100ms;
+}
+
+#one {
+    margin-left: 0;
+}
+
+#five {
+    margin-right: 0;
+}
+
+.number_rating:hover {
+    background-color: hsl(216 12% 54%);
+    color: hsl(0 0% 100%);
+}
+
+.number_rating:focus {
+    background-color: hsl(25 97% 50%);
+    color: hsl(0 0% 100%);
+}
+
+#submit {
+    display: block;
+    border: none;
+    cursor: pointer;
+    border-radius: 100px;
+    width: 100%;
+    height: 45px;
+    font-weight: 700;
+    color: hsl(0 0% 100%);
+    background-color: hsl(25 97% 53%);
+    transition: ease-in 0.3s;
+}
+
+#submit:hover {
+    background-color: hsl(0 0% 100%);
+    color: hsl(25 97% 65%);
+}
+
+.display {
+    display: none;
+    position: fixed;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+}
+
+#result {
+    width: 250px;
+    height: 30px;
+    background-color: hsl(216 12% 54% / 10%);
+    border-radius: 100px;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 25px auto;
+    color: hsl(25 97% 65%);
+}
+
+#text {
+    margin-top: 40px;
+}
+
+#paragraph2 {
+    color: hsl(216 12% 54%);
+}
